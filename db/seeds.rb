@@ -6,7 +6,3 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # contact5 = Contact.new(first_name: "Ted", last_name: "Simpson", email: "ted@aol.com", phone_number: "73965198")
-
-100.times do
-  p Faker::Name.name
-end
