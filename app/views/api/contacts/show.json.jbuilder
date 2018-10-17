@@ -1,5 +1,5 @@
-json.id @contact4.id
-json.first_name @contact4.first_name
-json.last_name @contact4.last_name
-json.phone_number @contact4.phone_number
-json.email @contact4.email
+json.id @contact1.id
+json.first_name @contact1.first_name
+json.last_name @contact1.last_name
+json.phone_number @contact1.phone_number
+json.email @contact1.email
