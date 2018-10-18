@@ -5,7 +5,7 @@ class Api::ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new(first_name: params[:input_first_name], last_name: params[:input_last_name], phone_number: params[:input_phone_number], email: params[:input_email], middle_name: params[:input_middle_name])
+    @contact = Contact.new(first_name: params[:input_first_name], last_name: params[:input_last_name], phone_number: params[:input_phone_number], email: params[:input_email], middle_name: params[:input_middle_name], bio: params[:input_bio])
     @contact.save
     render "show.json.jbuilder"
   end
@@ -17,6 +17,8 @@ class Api::ContactsController < ApplicationController
     @contact.last_name = params[:input_last_name]
     @contact.phone_number = params[:input_phone_number]
     @contact.email = params[:input_email]
+    @contact.middle_name = params[:input_middle_name]
+    @contact.bio = params[:input_bio]
     @contact.save
     render "show.json.jbuilder"
   end
