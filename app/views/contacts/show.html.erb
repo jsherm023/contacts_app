@@ -1,0 +1,11 @@
+<h1>Here is the info for one contact</h1>
+<p><% @contact.id%></p>
+<p>first_name: <%= @contact.first_name%> </p>
+<p>last_name: <%= @contact.last_name%> </p>
+<p>phone_number: <%= @contact.phone_number%> </p>
+<p>email: <%= @contact.email%> </p>
+<p>middle_name: <%= @contact.middle_name%> </p>
+<p>bio: <%= @contact.bio%> </p>
+<p>user_id: <%= @contact.user_id%> </p>
+
+  <a href="/contacts/<%=@contact.id %>" data-method="delete" rel="nofollow">Delete the contact</a>

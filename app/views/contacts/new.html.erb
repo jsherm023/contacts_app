@@ -1,0 +1,13 @@
+<h3>Here is the form </h3>
+
+<%= form_tag "/contacts", method: :post do %>
+  <P>Enter the contacts first name<input type="text" name="first_name"></P>
+  <P>Enter the contacts last name<input type="text" name="last_name"></P>
+
+  <select name="user_id">
+    <% @contacts.each do |contact| %>
+      <option value="<%= contact.id %>"><%= contact.first_name %></option>
+    <% end %>
+  </select>
+  <input type="submit" value="Add a new contact">
+<%end%>
